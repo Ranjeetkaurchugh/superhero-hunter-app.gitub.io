@@ -1,0 +1,104 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #2A3786;
+   
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    overflow:hidden;
+    background-color: red;
+    padding: 20px 10px;
+}
+header a{
+    float: left;
+    color: #ffff;
+    text-align: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+} 
+header a:hover{
+  color: aquamarine;
+   
+}
+ 
+
+header a.active{
+    background-color: greenyellow;
+    color: wheat;
+}
+nav{
+float:right;
+
+}
+@media screen and (max-width:500px) {
+    header a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    header nav{
+        float: none;
+    }
+    
+}
+#display-superhero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  #superhero-box{
+    margin:20px;
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color:#000ff0;
+    box-shadow: 0px 2px 4px grey;
+    overflow: auto;
+    transition: all 0.4s ease-in-out;
+  }
+  #super-box:hover{
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+  #superhero-image{
+    width: 100%;
+    overflow:hidden;
+    margin-right: 25px;
+    transition: 0.4s ease-in-out;
+  }
+  #superhero-image:hover {
+    width: 50%;
+  }
+  #superhero-image img {
+    height: 100%;
+  }
+  .details {
+    width: 20%;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .details:hover {
+    display: flex;
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+  }
+  .details a {
+    padding: 20px;
+    font: 600;
+  }
+  #loading {
+    margin: auto;
+    text-align: center;
+    color: #02d299;
+    text-shadow: #333;
+  }
+
