@@ -1,7 +1,7 @@
 //fetch Super hero while typing on search bar
-document.addEventListener('keyup,fetchHero');
+document.addEventListener('keyup',fetchHero);
 //add fav function
-function addfav(superHeroID){
+function addFav(superHeroID){
     //add fav to local storage
     localStorage.setItem(superHeroID,superHeroID);
     console.log("add to fav:"+localStorage.getItem(superHeroID));
